@@ -49,7 +49,7 @@ class ktplugin extends PluginBase implements Listener{
 	 * @ignoreCancelled false
 	 */
 	public function onSpawn(PlayerRespawnEvent $event){
-		Server::getInstance()->broadcastMessage($event->getPlayer()->getDisplayName() . " has just spawned!");
+		Server::getInstance()->broadcastMessage("[KTP] " . $event->getPlayer()->getDisplayName() . " a rejoint la partie !");
 	}
 	
 	public function onRegainHealth(EntityRegainHealthEvent $event3) {
