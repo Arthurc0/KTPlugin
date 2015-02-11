@@ -9,7 +9,7 @@ author: ji_igrec
 description: Plugin pour un KTP
 commands:
  ktp:
-  description: Example command
+  description: Dit bonjour à l'utilisateur
   usage: "Usage: /ktp"
   permission: ktplugin.command.ktp
 permissions:
