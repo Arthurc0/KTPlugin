@@ -1,0 +1,18 @@
+#name, main, version and api are required
+name: KTP
+main: ji_igrec\ktplugin\ktplugin
+version: 0.0.1
+api: 1.0.0
+
+load: POSTWORLD
+author: ji_igrec
+description: Plugin pour un KTP
+commands:
+ ktp:
+  description: Example command
+  usage: "Usage: /example"
+  permission: ktplugin.command.ktp
+permissions:
+ ktplugin.command.ktp:
+  description: "Allows the user to run the example command"
+  default: true
