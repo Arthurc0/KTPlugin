@@ -78,9 +78,14 @@ class ktplugin extends PluginBase implements Listener{
 	}
 	
 	public function onDeath(PlayerDeathEvent $event2) {
-		Server::getInstance()->broadcastMessage("[KTP] " . $event2->getPlayer()->getDisplayName() . " est mort !");
-		$event2->getPlayer()->setBanned(true);
-		$event2->getPlayer()->kick("Vous êtes mort !");
+		
+		if ($event2->getEntity instanceof Player) {
+			
+			Server::getInstance()->broadcastMessage("[KTP] " . $event2->getEntity()->getDisplayName() . " est mort !");
+			$event2->getEntityr()->setBanned(true);
+			$event2->getEntity()->kick("Vous êtes mort !");
+			
+		}
 		
 	}
 }
