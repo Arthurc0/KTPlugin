@@ -10,9 +10,9 @@ description: Plugin pour un KTP
 commands:
  ktp:
   description: Example command
-  usage: "Usage: /example"
+  usage: "Usage: /ktp"
   permission: ktplugin.command.ktp
 permissions:
  ktplugin.command.ktp:
-  description: "Allows the user to run the example command"
+  description: "Dit bonjour à l'utilisateur"
   default: true
