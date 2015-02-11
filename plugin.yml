@@ -1,7 +1,7 @@
 #name, main, version and api are required
 name: KTP
 main: ji_igrec\ktplugin\ktplugin
-version: 0.0.1
+version: 0.0.2
 api: 1.0.0
 
 load: POSTWORLD
