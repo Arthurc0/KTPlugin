@@ -1,8 +1,8 @@
 #name, main, version and api are required
 name: KTP
 main: ji_igrec\ktplugin\ktplugin
-version: 0.0.2
-api: 1.0.0
+version: 0.0.3
+api: 1.10.0
 
 load: POSTWORLD
 author: ji_igrec
@@ -12,7 +12,21 @@ commands:
   description: Dit bonjour à l'utilisateur
   usage: "Usage: /ktp"
   permission: ktplugin.command.ktp
+ start:
+  description: Démarre la partie de KTP
+  usage: "Usage: /start"
+  permission: ktplugin.command.start
+ end:
+  description: Arrête de force le KTP
+  usage: "Usage: /end"
+  permission: ktplugin.command.ktp
 permissions:
  ktplugin.command.ktp:
   description: "Dit bonjour à l'utilisateur"
   default: true
+ ktplugin.command.start:
+  description: "Démarre la partie de KTP"
+  default: op
+ ktplugin.command.end:
+  description: "Arrête de force le KTP"
+  default: op
