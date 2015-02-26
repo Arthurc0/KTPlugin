@@ -58,6 +58,7 @@ class ktplugin extends PluginBase implements Listener{
 					Server::getInstance()->broadcastMessage("[KTP] Le KTP vient de commencer !");
 					#foreach ($player) {
 					#	$player->sendMessage("Bonne chance, ".$player->getName()." !");
+
 					#}
 					Server::getInstance()->broadcastMessage("[KTP] Bonne chance !");
 				}
@@ -129,6 +130,7 @@ class ktplugin extends PluginBase implements Listener{
 			Server::getInstance()->broadcastMessage("[KTP] Fin de l'épisode " . $ep . " !");
 		$ep = $ep + 1;		
 	
+
 	}
 	
 	public function endKTP($count) {
@@ -141,8 +143,8 @@ class ktplugin extends PluginBase implements Listener{
 			$dernierJoueur = $this->getServer()->getOnlinePlayers();
 			$DJ = getplayer($dernierJoueur);
 			if ($DJ instanceof Player){
-			$DJnom = $DJ->getDisplayName();
-			Server::getInstance()->broadcastMessage("[KTP] " . $DJnom . "a gagné!");
+				$DJnom = $DJ->getDisplayName();
+				Server::getInstance()->broadcastMessage("[KTP] " . $DJnom . "a gagné!");
 			}
 			return true;
 			
@@ -152,8 +154,10 @@ class ktplugin extends PluginBase implements Listener{
 			Server::getInstance()->broadcastMessage("[KTP] Le KTP a été annulé.");
 			return true;
 			
+
 		}
 		
+
 	}
 	
 }
